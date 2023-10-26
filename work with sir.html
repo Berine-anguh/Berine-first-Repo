@@ -1,0 +1,94 @@
+<html>
+    <Head>
+        <style type="text/css">
+        div {
+            width: 100%;
+        }
+        .row {
+            display: flex;
+            flex-direction: row;
+        }
+        .box{
+            max-width: 100% !important;
+            border: solid  black 1px;
+            height: 100%;
+        }
+        .sm-box {
+            height: 33% !important;
+        }
+        #top-bar {
+            background-color: #0092ff;
+            height: 50px;
+        }
+        #intro {
+            height: 300px;
+            background-color: #999999;
+        }
+        #welcome {
+            border: 1px solid black;
+        }
+        #welcome .row > div,
+        #ads .row > div, 
+        #services .row > div   {
+           height: 200px;
+           padding: 30px 20px;
+        }
+        #welcome .row div:first-child {
+            max-width: 25%;
+        }
+        #ads .row > div:last-child{
+            max-width: 200px !important;
+        }
+        #services {
+            background-color: #eeeeee;
+        }
+        #services .row > div > div {
+            background-color: #ffffff;
+        }
+        #footer {
+            background-color:black;
+            height: 50px;
+        }
+        </style>
+    </Head>
+    <body>
+        <div id="top-bar"></div>
+        <div id="intro"></div>
+        <div id="welcome">
+            <div class="row">
+                <div>
+                    <div class="box"></div>
+                </div>
+                <div>
+                    <div class="box"></div>
+                </div>
+            </div>
+        </div>
+        <div id="ads">
+           <div class="row">
+            <div>
+                <div class=" box"></div>
+            </div>
+            <div>
+                <div class=" box sm-box"></div>
+                <div class="sm-box"></div>
+                <div class=" box sm-box"></div>
+             </div>
+            </div>
+        </div>
+        <div id="services">
+            <div class="row">
+                <div>
+                    <div class="box"></div>
+                </div>
+                <div>
+                    <div class="box"></div>
+                </div>
+                <div>
+                    <div class="box"></div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </body>
+</html>
