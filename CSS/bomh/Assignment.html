@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <style>
+            .vad{
+                background-color: blue;
+                height: 20px;
+            }
+                .zad{
+                    background-color: #b6b6b4;
+                    height: 100px;
+                }
+                .flex-container {
+                    display: flex;
+                    background-color:rgba(250, 242, 242, 0.822);
+                    border-style:outside ;
+                    height: 100px;
+                    gap: 10px;
+                    
+                    
+                 }
+                .flex-container >div {
+                        background-color: rgb(182, 166, 166);
+                        display: block;
+                        border: 4px;
+                        border: 2px;
+                        padding: 5;
+                        height: 25;
+                        width: 30px;
+                        margin: 10;
+                        font-size: 1px;
+
+                    }
+                    .item1 {
+                        grid-column: 3;
+                        grid-row: 1 /span 2;
+                    }
+                    .item2 {
+                        grid-column: 1 / span 2;
+                        grid-row: 3;
+                    }
+
+        </style>
+    </head>
+    <body>
+    <div class="vad">
+    </div>
+    <div class="zad">
+    </div>
+    <div class="flex-container">
+        <div class="grid-item item">1</div>
+        <div class="grid-item item">5</div>
+    </div>
+
+    </body>
+</html>
